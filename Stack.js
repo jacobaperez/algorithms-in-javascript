@@ -32,3 +32,5 @@ class Stack {
   }
 
 }
+
+exports.stack = Stack;
