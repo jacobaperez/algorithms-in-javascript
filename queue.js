@@ -44,6 +44,6 @@ class Queue {
 
   }
 
-
-
 }
+
+exports.queue = Queue
