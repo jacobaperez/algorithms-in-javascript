@@ -34,9 +34,9 @@ class Queue {
   pop() {
     if (this.size !== 0) {
       let temp = this.storage[this.next];
-      delete this.storage[this.next];
-      this.next++;
+      delete this.storage[this.next++];
       this.size--;
+      return temp;
     } {
       console.log("Empty Queue");
       return null;
