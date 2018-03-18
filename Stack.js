@@ -1,3 +1,4 @@
+// fix stack to return instead of console.log
 
 class Stack {
   constructor(size = Infinity) {
@@ -27,7 +28,7 @@ class Stack {
       this.size--;
       return temp;
     } else {
-      console.log("Can no longer remove from empty stack");
+      console.log("Can test no longer remove from empty stack");
     }
   }
 
