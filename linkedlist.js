@@ -39,7 +39,6 @@ class LinkedList {
       console.log(node.data);
       node = node.next;
     }
-    // console.log(node.data);
   }
 
   // forEach(cb) {
@@ -50,7 +49,6 @@ class LinkedList {
   //   }
   // }
 
-
 }
 
 class Node {
@@ -60,4 +58,4 @@ class Node {
   }
 }
 
-// exports.linkedlist = LinkedList;
+exports.linkedlist = LinkedList;
