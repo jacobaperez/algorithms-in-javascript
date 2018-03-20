@@ -23,7 +23,24 @@ class LinkedList {
     console.log(this);
   }
 
+  addToTail(val) {
+    let newTail = new Node(val);
+    let node = this.head;
+    while(node !== this.tail) {
+      node = node.next;
+    }
+    node.next = newTail;
+    this.tail = newTail;
+  }
 
+  list() {
+    let node = this.head;
+    while(node) {
+      console.log(node.data);
+      node = node.next;
+    }
+    // console.log(node.data);
+  }
 
   // forEach(cb) {
   //   let node = this.head;
@@ -43,4 +60,4 @@ class Node {
   }
 }
 
-exports.linkedlist = LinkedList;
+// exports.linkedlist = LinkedList;
