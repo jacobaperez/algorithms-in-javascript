@@ -10,7 +10,7 @@ class Stack {
   insert(val) {
     this.size++;
     this.storage[this.size] = val;
-    console.log(val);
+    return this.storage[this.size];
   }
 
   getSize() {
